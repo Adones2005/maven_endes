@@ -23,4 +23,15 @@ public class EmployeeManager {
         employees.add(employee);
         System.out.println(name + " added to the system.");
     }
+
+    /**
+     * Método para imprimir la lista de empleados.
+     */
+    public void printEmployees() {
+        System.out.println("List of employees:");
+        for (Employee employee : employees) {
+            System.out.println(employee.getName() + ", Years in company: " + employee.getYearsInCompany());
+        }
+    }
 }
+   
